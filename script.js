@@ -4,7 +4,7 @@
     checkNow.addEventListener('click', () => {
         getISS();
     })
-
+    
     const getISS = async () => {
         
         const ISS_API_URL = 'https://api.wheretheiss.at/v1/satellites/25544';
@@ -46,7 +46,7 @@
 
         const resp = await fetch('/api',options);
         const dataResp = await resp.json();
-        console.log(dataResp);
+//         console.log(dataResp);
     }
 
     getISS();
